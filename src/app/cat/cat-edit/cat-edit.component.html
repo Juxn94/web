@@ -1,0 +1,38 @@
+<div class="card card-1">
+    <div class="card-body">
+        <h2 class="title">Catisfaction</h2>
+        <form  [formGroup]="editForm" (ngSubmit)="save()" validate>
+
+            <div class="form-group">
+              <label>Name</label>
+              <input type="text" formControlName="name" class="form-control" 
+                [ngClass]="{ 'is-invalid': submitted && f.name.errors }" [(ngModel)]="currentCat.name" value={{currentCat.name}} />
+              <div *ngIf="submitted && f.name.errors" class="invalid-feedback">
+                  <div *ngIf="f.name.errors.required">Name is required</div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Description</label>
+              <input type="text" formControlName="description" class="form-control" 
+                [ngClass]="{ 'is-invalid': submitted && f.description.errors }" [(ngModel)]="currentCat.description" value={{currentCat.description}}/>
+              <div *ngIf="submitted && f.description.errors" class="invalid-feedback">
+                  <div *ngIf="f.description.errors.required">Description is required</div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Image Url</label>
+              <input type="text" formControlName="img" class="form-control" 
+                [ngClass]="{ 'is-invalid': submitted && f.img.errors }" [(ngModel)]="currentCat.img" value={{currentCat.img}}/>
+              <div *ngIf="submitted && f.img.errors" class="invalid-feedback">
+                  <div *ngIf="f.img.errors.required">Image Url is required</div>
+              </div>
+            </div>
+
+            <div class="p-t-20">
+                <button class="btn btn--radius btn--green" type="submit">Update Cat (^o.o^)</button>
+            </div>
+        </form>
+    </div>
+</div>

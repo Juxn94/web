@@ -1,0 +1,31 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import 'assets/css//form.css';
+
+.content {
+    margin-top: 40px;
+}
+
+.card-image-container {
+    height: 200px;
+    position: relative;
+    img {
+        height: 100%;
+    }
+}
+
+.btn-success {
+    margin-bottom: 20px;
+}
+
+.btn-success, .btn-danger {
+    color: white !important;
+}
+
+.card {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.mg-top-10 {
+    margin-top: 10px;
+}
