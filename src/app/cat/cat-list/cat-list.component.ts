@@ -24,7 +24,7 @@ export class CatListComponent implements OnInit {
 
   updateCats() {
     const currentCats = JSON.parse(localStorage.getItem('cats'))
-    this.cats = currentCats;
+    this.cats = currentCats !== null ? currentCats : [];
     this.catsToDisplay = currentCats;
   }
 
