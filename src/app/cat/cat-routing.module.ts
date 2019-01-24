@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { CatListComponent } from './cat-list/cat-list.component';
 import { CatCreateComponent } from './cat-create/cat-create.component';
 import { CatEditComponent } from './cat-edit/cat-edit.component';
+import { CatDetailComponent } from './cat-detail/cat-detail.component';
 
 const routes: Routes = [
   {
@@ -20,6 +21,10 @@ const routes: Routes = [
         path: 'cat-edit',
         component: CatEditComponent
       },
+      {
+        path: 'cat-detail',
+        component: CatDetailComponent
+      }
     ]
   }
 ];

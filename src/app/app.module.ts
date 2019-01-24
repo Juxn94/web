@@ -11,7 +11,7 @@ import { CatModule } from './cat/cat.module';
   declarations: [
     AppComponent,
     HomeComponent,
-    NavComponent
+    NavComponent,
   ],
   imports: [
     BrowserModule,

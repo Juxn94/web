@@ -1,5 +1,6 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
 @import 'assets/css//form.css';
+@import 'assets/css//wicked.min.css';
 
 .content {
     margin-top: 40px;
@@ -28,4 +29,18 @@
 
 .mg-top-10 {
     margin-top: 10px;
+}
+
+.cat-profile {
+    text-align: center;
+    h1 {
+        margin-bottom: 20px;
+    }
+    p {
+        margin-top: 60px;
+        font-style: italic;
+    }
+    img {
+        max-height: 500px;
+    }
 }
